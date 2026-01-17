@@ -1,6 +1,8 @@
 package com.example.firstapp_Ababkova
 
 import android.os.Bundle
+import android.widget.Button
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -14,7 +16,14 @@ class MainActivity : AppCompatActivity() {
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            inset
+            insets
+        }
+        setContentView(R.layout.activity_main)
+        val button: Button = findViewById(R.id.button)
+        val text: TextView = findViewById(R.id.text)
+        button.setOnClickListener{
+            view ->
+            text.text = (1..6).random().toString()
         }
     }
 }
