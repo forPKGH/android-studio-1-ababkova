@@ -12,7 +12,7 @@
         android:layout_width="22dp"
         android:layout_height="35dp"
         android:layout_marginBottom="24dp"
-        android:text="0"
+        android:text="@string/_0"
         android:textAlignment="center"
         android:textColor="#021CAB"
         android:textSize="30sp"
@@ -26,8 +26,9 @@
         android:layout_height="59dp"
         android:layout_marginBottom="280dp"
         android:backgroundTint="#002CFF"
-        android:text="Нажмите на кнопку чтобы бросить кубик"
+        android:text="@string/btn_text"
         android:textAlignment="center"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -37,7 +38,7 @@
         android:layout_width="481dp"
         android:layout_height="248dp"
         android:src="@drawable/image_1"
-        android:contentDescription="Гора"
+        android:contentDescription="@string/image_description"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
