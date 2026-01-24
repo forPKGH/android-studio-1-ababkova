@@ -15,7 +15,7 @@
         android:text="0"
         android:textAlignment="center"
         android:textColor="#021CAB"
-        android:textSize="30dp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -36,8 +36,10 @@
         android:id="@+id/imageView"
         android:layout_width="481dp"
         android:layout_height="248dp"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="-2dp"
-        tools:srcCompat="@drawable/image_1" />
+        android:src="@drawable/image_1"
+        android:contentDescription="Гора"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
